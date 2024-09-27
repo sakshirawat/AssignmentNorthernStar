@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        body {
+            margin: 0;
+            height:100vh
+        }
+       .custom-shadow {
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.8)
+      }
+      .bg-yellow {
+            background-color: yellow;
+            padding: 2px 5px; 
+            border-radius: 3px;
+        }
+        .bg-yellow1{
+          background-color: yellow;
+          margin-left: 55px;
+          width:150px;
+          padding: 2px 5px;
+          border-radius: 3px;
+        }
+        .bck-color{
+            background-color:antiquewhite;
+            color:black;
+            padding: 40px; 
+            width: 100vw; 
+            height:400px;
+            position: relative; 
+            left: 50%; 
+            right: 50%;; 
+            margin-left: -50vw; 
+            margin-right: -50vw; 
+            box-sizing: border-box;
+        }
+        .iframe-container {
+            position: absolute;
+            top:280px;
+            left: 150px; 
+            bottom: -250px; /* Move 50px below the bottom of the parent */
+            width:800px
+        }
+        .form-position{
+            position:absolute;
+            top:30px;
+            right:50px;
+        }
+        .custom-underline {
+            text-decoration: underline;
+            text-decoration-color: red; /* Change this to your desired color */
+        }
+        .small-box{
+          background-color: red;
+          border-color: 2px red;
+          height:50px;
+          width:50px
+        }
+        .img-container{
+          background-color: white;
+          height:110px;
+          width:310px;
+          border-radius:4%
+        }
+        .img-Bigcontainer{
+          position: relative; 
+            margin-left: 100px;
+        }
+        .img-container1{
+          position: absolute; 
+            top: 130px;
+            left: 250px; 
+            z-index: 1; 
+        }
+        .img-container2{
+          position: relative; 
+            margin-bottom: 40px
+        }
+        .small-container {
+            background-color: antiquewhite;
+            border: 2px solid red; 
+            border-radius: 2%;
+            padding: 40px; 
+            margin-top: 30px;
+        }
+        .small-container2 {
+            border: 2px dotted black;
+            padding: 20px;
+        }
+        .btn-custom {
+            height: 80px;
+            width: 250px;
+            color: yellow;
+            font-size: large;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+        .custom-container2{
+            background-color: antiquewhite;
+            width:100vw;
+            height:750px;
+            margin-top:40px;
+            padding-left: 300px;
+            padding-right: 300px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            
+        }
+        .custom-underline2 {
+            text-decoration: underline;
+            text-decoration-color: yellow; 
+        }
+
+        .box{
+            height:50px;
+            width:160px;
+
+            border:2px solid black
+
+        }
+        .column{
+            padding:40px;
+        }
+        .btn-custom {
+            height: 60px;
+            width: 250px;
+            color: yellow;
+            font-size: large;
+            box-shadow: 0 4px 10px rgba(10, 9, 9, 0.15);
+        }
+        .CMA{
+            padding-left:70px ;
+            padding-right: 70px;
+        }
+        .small-box5{
+            border:2px solid red;
+
+        }
+        .hunning{
+            text-decoration: underline;
+            text-decoration-color:yellow ;
+        }
+          
+      </style>
+  </head>
+  <body>
+
+
+  
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <a class="nav-item">
+                        <img src="northernStar.jpeg" alt="northern" width="100px" height="50px">
+                    </a>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Education Partners</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">World Class Mentor</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CMA as Career?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Our Alumni</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href='#'>Why NSA?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">100% Placement</a>
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-danger ms-auto">Enroll Now</button>
+              </div>
+            </div>
+          </nav>
+          
+         
+          <div class="container-fluid bck-color" >
+            <div class="row">
+              <div class="col-md-7 ps-5">
+            <h2 class="fw-bolder text-start"> Unlock your Financial </h2>
+            <h2 class="fw-bolder text-start">potential <span class="fw-bold bg-yellow">with CMA</span></h2>
+            <h6 class="fw-lighter bg-yellow1 text-start">ABOUT COURSE</h6>
+            <p class="fw-light" style="padding-left: 65px; text-align:left;">CMA(Certified Management Accountant) USA is a globally recognized professional certification in the field of management accounting offered by the institute of Management Accountants(IMA).The certification demostrates expertise in financial planning,analysis,control,decision support,and professional ethics.</p>
+            <div class="ratio ratio-16x9 iframe-container">
+                <iframe src="iframe.jpeg" ></iframe>
+              </div>
+              </div>
+
+              <div class="col-md-6">
+              <div class="bg-black text-white border border-warning rounded-2 p-3 form-position" style="height: 650px; width: 400px;border: 1px solid;" id="future-Form">
+                <h4 class="text-center fst-italic">Future Proof Your</h4>
+                <h4 class="text-center fst-italic">Finance Career?</h4>
+                <p class="text-sm-center text-wrap fs-6 fw-lighter">Unlock your potential and take the first step towards success with World Class Mentor Mr.M Irfat in our upcoming CMA USA Live Webinar</p>
+            
+                <form>
+                    <div class="mb-3" >
+                        <label for="name" class="form-label"></label>
+                        <input type="email" class="form-control" placeholder="Enter your Full Name*">
+                      </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label"></label>
+                      <input type="email" class="form-control" placeholder="Your Email Address*">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label"></label>
+                      <input type="password" class="form-control" placeholder="Enter your Phone Number*">
+                    </div>
+                    <div>
+                    <input type="radio" value="qualification">
+                    <label for="student">Student</label>
+                    <input type="radio" value="qualification">
+                    <label for="student">Professional</label>
+                    </div>
+                    <div>
+                       <label for="city" class="form-label"></label>
+                       <input type="city" class="form-control" placeholder="Enter your City*">
+                    </div>
+                    <div class="form-check mb-3 d-flex align-items-center">
+                        <input type="checkbox" class="form-check-input" id="subscribe" required>
+                        <label class="form-check-label ms-2 p-1" for="subscribe">Accept terms, privacy policy and get seamless support on whatsApp</label>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-danger shadow custom-shadow p-3 mb-5 rounded">Register for the Webinar</button>
+                    </div>
+                  </form>
+              </div> 
+              </div>
+          </div>
+          </div>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h2 class="custom-underline">Content Partner</h2>
+                    <p>IMA and Becker partner with NorthStar Academy for CMA exam preparation. This collaboration brings Becker's expertise and IMA's leadership to the certification journey. The partnership enhances the value of the CMA certification.</p>
+                    <img src="northernStar.jpeg" style="height:100px; width: 280px;"> 
+                    <img src="ima.png" style="height:100px; width:280px"> 
+                    <img src="becker.png" style="height:100px; width:280px">
+                </div>
+                <div class="col-md-4  d-flex justify-content-center ">
+                    <img src="jj.jpeg" style="width: 60%; height:250px"> 
+                </div>
+            </div>
+        </div>
+    
+        <div class="container-fluid bg-danger mt-5 pt-5 " style="height:800px">
+          <div class="row">
+            <div class="col-md-7" style="margin-left: 50px;">
+          <h6 class="border bg-warning ms-5"style="border: solid black; height:25px; width:450px">MEET M. IRFATI INDIA'S LEADING CMA & CPA INSTRUCTOR</h6>
+          <h3 style="color:white; margin-left: 50px; margin-top: 20px;">A Professional CA, CMA(USA),CPA,and CIMA(UK) with a Passion for Education</h3>
+          <p class="fw-light ms-5 mt-3" style="color:black">Mr. M.Irfat is a highly experienced and sought-after instructor for Management Accounting andFinance,with @@ years of teaching experience and recognition for exellence. he has taught thousands of students globally,earning a reputation as a leading expert in his field.</p>
+     
+          <div class="row p-4 m-3 d-flex justify-content-between">
+            <div class="col-md-3 text-start small-box1">
+                <img src="stars.jpeg" style="max-width: 100%; height: auto;">
+                <h4 style="color:white">Google</h4>
+                <h4>4.8 Star</h4>
+            </div>
+            <div class="col-md-3 text-start small-box1">
+              <img src="stars.jpeg" style="max-width: 100%; height: auto;">
+              <h4 style="color:white">Facebook</h4>
+              <h4>4.8 Star</h4>
+          </div>
+          <div class="col-md-3 text-start small-box1">
+            <img src="stars.jpeg" style="max-width: 100%; height: auto;">
+            <h4 style="color:white">Justdial</h4>
+            <h4>4.8 Star</h4>
+        </div>
+        <div class="col-md-3 text-start small-box1">
+          <img src="stars.jpeg" style="max-width: 100%; height: auto;">
+          <h4 style="color:white">sulekha.com</h4>
+          <h4>4.8 Star</h4>
+      </div>
+        </div>
+
+        <div class="img-Bigcontainer">
+          <div class="img-container" style="margin-left: 100px">
+            <img src="review1.webp" style="height:150px; width:450px">
+          </div>
+          <div class="img-container2" style="margin-left: 100px; margin-top:80px">
+            <img src="review2.webp" style="height:150px; width:450px">
+          </div>
+          <div class="img-container1" style="margin-left: 100px">
+            <img src="review3.webp" style="height:120px; width:450px">
+          </div>
+        </div>
+          </div>
+          <div class="col-md-4">
+            <img src="man.avif" alt="man" style="height:780px; width:400px;padding-left:80px">
+          </div>
+        </div>
+        </div>
+         
+
+        <div class="container pt-4 ">
+     
+          <div class="row d-flex justify-content-between small-container "> 
+              <div class="col-md-4"> 
+                  <h4>Embrace the power of your future and take control of it</h4>
+                  <p class="text-start">Sign up for the CMA Webinar</p>
+                  <p class="text-start">A complete guide to crack CMA</p>
+              </div>
+              <div class="col-md-3 text-center small-container2">
+                  <h4>26th Feb</h4>
+                  <h4>01:00 pm</h4>
+                  <h4>Sunday</h4>
+              </div>
+              <div class="col-md-3 d-flex justify-content-center align-items-center"> 
+                  <button type="button" class="btn btn-danger btn-custom">Register Now</button>
+              </div>
+          </div>
+      </div>
+
+      <div class="container-fluid  custom-container2">
+        <h2 class="text-center  custom-underline2">Why CMA?</h2>
+        <p class="text-center CMA">CMA USA is a higly valued professional certification in the field of management accounting and finance, offering broad knowlegde and skills that are in high demand among employees.Pursuing the CMA USA designation can lead to improved job prospects,higher salaries,and opportunities for career advancement.</p>
+        <div class ="row d-flex justify-content-around">
+            <div class="col-md-2 text-center bg-black p-2  box" style="color:yellow">Course Overview</div>
+            <div class="col-md-2 text-center p-2 box">Scope</div>
+            <div class="col-md-2 text-center p-2 box">Eligibilty</div>
+            <div class="col-md-2 text-center p-2 box">Opportunity</div>
+            <div class="col-md-2 text-center p-2 box">Salary</div>
+        </div>
+        <div class="row bg-white m-3 p-4">
+            <div class="col-md-6 column ">
+                <p>The CMA program aims to enhance the sills and knowlegde of financial professionals in areas such as financial plannin, analysis,control,decision support, and professional ethics. To earn the CMA designation, individuals must meet the educational and experience requirements,as well as pass a rigotous two-part exam.</p>
+            </div>
+            <div class="col-md-6">
+                <p>CMA(Certified Management Accountant) is a professional certification in the field of management accounting.</p>
+                <p>It is awarded by the institute of Management Accountants(IMA) in the United States.</p>
+                <p>The CMA program focuses on finacial plannin, analysis, control, decision-support and professional ethics.</p>
+                <p>The certification demonstrates expertise and commitment to the field, and can enhance career opportunities and aerning potential.</p>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center"> 
+            <button type="button" class="btn btn-danger btn-custom">Register Now</button>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-white" style="height:200px; width:100vh">
+      <div class="row p-4 m-3 g-3 d-flex justify-content-between">
+          <div class="col-md-2 text-start small-box5 ">
+              <h3 class="hunning">45+</h3>
+              <p class="fw-bold">On Going Batches</p>
+          </div>
+          <div class=" col-md-2 text-start small-box5">
+              <h3 class="hunning">35+</h3>
+              <p class="fw-bold">Countries Covered</p>
+          </div>
+          <div class=" col-md-2  text-start small-box5">
+              <h3 class="hunning">128+</h3>
+              <p class="fw-bold">Hiring Partners</p>
+          </div>
+          <div class="col-md-2 text-start small-box5">
+              <h3 class="hunning">90%</h3>
+              <p class="fw-bold">Pass Percentage</p>
+          </div>
+      </div>
+  </div>
+
+    </body>
+</html>
